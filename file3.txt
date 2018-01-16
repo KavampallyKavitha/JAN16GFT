@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BOM: Window Open Close</title>
+<script>
+//Global var to store a reference to the opened window
+var openedWindow;
+
+function openWindow() {
+  openedWindow = window.open('https://portal.accenture.com');
+}
+
+function closeOpenedWindow() {
+  openedWindow.close();
+}
+
+</script>
+</head>
+<body>
+	<button onclick="openWindow()">Open Accenture Portal new Window</button>
+	<button onclick="closeOpenedWindow()">Close Opened Window</button>
+	
+</body>
+</html>
